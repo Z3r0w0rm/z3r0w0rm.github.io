@@ -1,48 +1,48 @@
 <!DOCTYPE HTML>
-<!--
-Created By ZeroWorm
--->
 <html>
 	<head>
 		<title>ZeroWorm</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+	<body class="is-loading">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Philip Mo ( Z3r0W0rm )</h1>
-						<p>Security Chief Of TeamH4C</p>
-						<nav>
-							<ul>
-								<li><a href="https://www.facebook.com/profile.php?id=100010574346096" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="http://www.github.com/Z3r0w0rm/" class="icon fa-github"><span class="label">Github</span></a></li>
-								<li><a href="z3r0w0rm@naver.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<h1>Philip Mo</h1>
+							<p>Chief Security Officer Of TeamH4C</p>
+						</header>
+						<footer>
+							<ul class="icons">
+								<li><a href="#" class="fa-github">GitHub</a></li>
+								<li><a href="#" class="fa-home">Instagram</a></li>
+								<li><a href="#" class="fa-facebook">Facebook</a></li>
 							</ul>
-						</nav>
-					</header>
+						</footer>
+					</section>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright">&copy; <a href="#">Z3r0W0rm</a> Design: <a href="http://www.github.com/Z3r0w0rm/">Z3r0W0rm</a>.</span>
+						<ul class="copyright">
+							<li>&copy; Philip Mo</li>
+							<li>Design: <a href="#">Philip Mo</a></li>
+						</ul>
 					</footer>
 
 			</div>
-		</div>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script>
-			window.onload = function() { document.body.className = ''; }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
 	</body>
 </html>
